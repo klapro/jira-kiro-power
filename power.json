@@ -7,9 +7,9 @@
     "icon": "icon.svg",
     "mcpServers": {
         "jira-mcp": {
-            "command": "node",
+            "command": "bash",
             "args": [
-                "./build/index.js"
+                "./launch.sh"
             ]
         }
     },

@@ -1,9 +1,9 @@
 {
     "mcpServers": {
         "jira-mcp": {
-            "command": "node",
+            "command": "bash",
             "args": [
-                "./build/index.js"
+                "./launch.sh"
             ],
             "env": {
                 "JIRA_API_TOKEN": "",
