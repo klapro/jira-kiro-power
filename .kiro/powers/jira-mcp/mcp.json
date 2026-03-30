@@ -3,7 +3,7 @@
         "jira-mcp": {
             "command": "node",
             "args": [
-                "${workspaceFolder}/build/index.js"
+                "./build/index.js"
             ],
             "env": {
                 "JIRA_API_TOKEN": "",

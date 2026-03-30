@@ -12,7 +12,7 @@ export class JiraApiService {
   protected headers: Headers;
 
   constructor(baseUrl: string, email: string, apiToken: string, authType: 'basic' | 'bearer' = 'basic') {
-    this.baseUrl = baseUrl;
+    this.baseUrl = baseUrl.replace(/\/+$/, '');
     
     let authHeader: string;
     if (authType === 'bearer') {
@@ -264,7 +264,7 @@ export class JiraApiService {
       expand: "names,renderedFields",
     });
 
-    const data = await this.fetchJson<any>(`/rest/api/3/search?${params}`);
+    const data = await this.fetchJson<any>(`/rest/api/3/search/jql?${params}`);
 
     return {
       total: data.total,
@@ -292,7 +292,7 @@ export class JiraApiService {
       expand: "names,renderedFields",
     });
 
-    const data = await this.fetchJson<any>(`/rest/api/3/search?${params}`);
+    const data = await this.fetchJson<any>(`/rest/api/3/search/jql?${params}`);
 
     const issuesWithComments = await Promise.all(
       data.issues.map(async (issue: any) => {
