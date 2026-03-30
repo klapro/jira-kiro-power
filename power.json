@@ -5,6 +5,14 @@
     "description": "Access Jira Cloud and Server/Data Center — search, create, update, transition issues, add comments and attachments.",
     "author": "klapro",
     "icon": "icon.svg",
+    "mcpServers": {
+        "jira-mcp": {
+            "command": "node",
+            "args": [
+                "./build/index.js"
+            ]
+        }
+    },
     "keywords": [
         "jira",
         "atlassian",

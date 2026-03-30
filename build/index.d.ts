@@ -1,4 +1,4 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 declare module "bun" {
     interface Env {
         JIRA_API_TOKEN: string;

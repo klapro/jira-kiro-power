@@ -10,15 +10,14 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: [
-        "@modelcontextprotocol/sdk/server/index.js",
-        "@modelcontextprotocol/sdk/server/stdio.js",
-        "@modelcontextprotocol/sdk/types.js",
-      ],
+      external: [/^node:/],
     },
     target: "node18",
     outDir: "build",
     sourcemap: true,
   },
   plugins: [dts()],
+  ssr: {
+    target: "node",
+  },
 });
