@@ -1,8 +1,11 @@
 {
-  "name": "jira-mcp",
+  "name": "jira-kiro-power",
   "version": "1.0.0",
-  "description": "JIRA MCP Server",
+  "description": "JIRA MCP Server for Kiro",
   "type": "module",
+  "bin": {
+    "jira-kiro-power": "./build/index.js"
+  },
   "scripts": {
     "build": "vite build && chmod +x build/index.js",
     "start": "bun build/index.js",

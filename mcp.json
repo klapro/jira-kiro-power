@@ -1,10 +1,10 @@
 {
     "mcpServers": {
         "jira-mcp": {
-            "command": "node",
+            "command": "npx",
             "args": [
-                "-e",
-                "await import(require('path').resolve(__dirname || '.','build','index.js'))"
+                "-y",
+                "jira-kiro-power"
             ],
             "env": {
                 "JIRA_API_TOKEN": "",

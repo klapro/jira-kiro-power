@@ -7,9 +7,10 @@
     "icon": "icon.svg",
     "mcpServers": {
         "jira-mcp": {
-            "command": "bash",
+            "command": "npx",
             "args": [
-                "./launch.sh"
+                "-y",
+                "jira-kiro-power"
             ]
         }
     },
