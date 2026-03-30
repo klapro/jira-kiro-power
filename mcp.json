@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "jira-mcp": {
+            "command": "node",
+            "args": [
+                "./build/index.js"
+            ],
+            "env": {
+                "JIRA_API_TOKEN": "",
+                "JIRA_BASE_URL": "",
+                "JIRA_USER_EMAIL": "",
+                "JIRA_TYPE": "cloud",
+                "JIRA_AUTH_TYPE": "basic"
+            },
+            "disabled": false,
+            "autoApprove": []
+        }
+    }
+}
