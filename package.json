@@ -28,7 +28,7 @@
   "devDependencies": {
     "@types/node": "^24.0.3",
     "bun-types": "^1.2.12",
-    "vite": "^7.0.2",
+    "vite": "^8.0.3",
     "vite-plugin-dts": "^4.5.3"
   }
 }
