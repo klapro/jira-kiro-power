@@ -1,5 +1,10 @@
 # JIRA MCP Server
 
+## Kiro Power
+A fork on the original project on github.com/cosmix/jira-mcp to be transformed as a Kiro Powers
+
+## About 
+
 A Model Context Protocol (MCP) server implementation that provides access to JIRA data with relationship tracking, optimized data payloads, and data cleaning for AI context windows.
 
 ℹ️ There is a separate MCP server [for Confluence](https://github.com/cosmix/confluence-mcp)
