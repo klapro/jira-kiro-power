@@ -1,9 +1,10 @@
 {
     "mcpServers": {
         "jira-mcp": {
-            "command": "bash",
+            "command": "node",
             "args": [
-                "./launch.sh"
+                "-e",
+                "await import(require('path').resolve(__dirname || '.','build','index.js'))"
             ],
             "env": {
                 "JIRA_API_TOKEN": "",
