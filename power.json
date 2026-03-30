@@ -1,0 +1,19 @@
+{
+    "name": "jira-kiro-power",
+    "displayName": "Jira MCP",
+    "version": "1.0.0",
+    "description": "Access Jira Cloud and Server/Data Center — search, create, update, transition issues, add comments and attachments.",
+    "author": "klapro",
+    "icon": "icon.svg",
+    "keywords": [
+        "jira",
+        "atlassian",
+        "issues",
+        "tickets",
+        "bugs",
+        "epics",
+        "sprints",
+        "project management",
+        "jql"
+    ]
+}
