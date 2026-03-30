@@ -1,6 +1,6 @@
 {
     "name": "jira-kiro-power",
-    "displayName": "Jira MCP",
+    "displayName": "Jira for Kiro",
     "version": "1.0.0",
     "description": "Access Jira Cloud and Server/Data Center — search, create, update, transition issues, add comments and attachments.",
     "author": "klapro",
