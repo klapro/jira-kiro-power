@@ -1,4 +1,11 @@
-# JIRA MCP Power
+---
+name: "jira-kiro-power"
+displayName: "Jira for Kiro"
+description: "Access Jira Cloud and Server/Data Center — search, create, update, transition issues, add comments and attachments."
+keywords: ["jira", "atlassian", "issues", "tickets", "bugs", "epics", "sprints", "project management", "jql", "kanban", "scrum"]
+---
+
+# Jira for Kiro
 
 Access Jira Cloud and Jira Server (Data Center) directly from Kiro. Search, create, update, and manage Jira issues through MCP without leaving your editor.
 
