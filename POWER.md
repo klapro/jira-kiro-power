@@ -17,15 +17,13 @@ Access Jira Cloud and Jira Server (Data Center) directly from Kiro. Search, crea
 
 ### 2. Configure Your Credentials
 
-After installing the power, add your credentials to `~/.kiro/settings/mcp.json` under the `powers.mcpServers` section:
+After installing the power, add your credentials to `~/.kiro/settings/mcp.json` under the `powers.mcpServers` section. You only need to provide the environment variables — the power handles the server command automatically:
 
 ```json
 {
   "powers": {
     "mcpServers": {
       "jira-mcp": {
-        "command": "node",
-        "args": ["./build/index.js"],
         "env": {
           "JIRA_API_TOKEN": "<your-api-token>",
           "JIRA_BASE_URL": "https://your-domain.atlassian.net",
@@ -39,7 +37,7 @@ After installing the power, add your credentials to `~/.kiro/settings/mcp.json` 
 }
 ```
 
-> **Note:** Place this under `powers.mcpServers`, not the top-level `mcpServers`. The `command` and `args` are required — they tell Kiro how to start the MCP server from the power's install directory.
+> **Note:** Place this under `powers.mcpServers`, not the top-level `mcpServers`. If the server fails to start with "must specify a command or URL", add `"command": "node"` and `"args": ["./build/index.js"]` alongside the `env` block — this can happen if Kiro's config merge doesn't preserve the power's defaults.
 
 ### Environment Variables
 
